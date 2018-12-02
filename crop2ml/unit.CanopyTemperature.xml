@@ -25,12 +25,12 @@
         <Output name="maxCanopyTemperature" description="maximal Canopy Temperature " datatype="DOUBLE" min="-30" max="45"  unit="°C" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547"/>
     </Outputs>
 
-    <Algorithm  language="C#" platform="" filename="unit.CanopyTemperature.cs" />
-    <Algorithm  language="Python" platform="" filename="unit.CanopyTemperature.py" />
-    <Algorithm  language="Cython" platform="" filename="unit.CanopyTemperature.pyx" />
-    <Algorithm  language="Java" platform="" filename="unit.CanopyTemperature.java" />
-    <Algorithm  language="C++" platform="" filename="unit.CanopyTemperature.cpp" />
-    <Algorithm  language="R" platform="" filename="unit.CanopyTemperature.r" />
+    <Algorithm  language="C#" platform="" filename="CanopyTemperature.cs" />
+    <Algorithm  language="Python" platform="" filename="CanopyTemperature.py" />
+    <Algorithm  language="Cython" platform="" filename="CanopyTemperature.pyx" />
+    <Algorithm  language="Java" platform="" filename="CanopyTemperature.java" />
+    <Algorithm  language="C++" platform="" filename="CanopyTemperature.cpp" />
+    <Algorithm  language="R" platform="" filename="CanopyTemperature.r" />
 
     <Parametersets>
         <Parameterset name="set1" description="some values in there" >
