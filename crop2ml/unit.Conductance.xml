@@ -27,12 +27,12 @@
 
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="unit.Conductance.cs"/>
-    <Algorithm  language="Python" platform="" filename="unit.Conductance.py" />
-    <Algorithm  language="Cython" platform="" filename="unit.Conductance.pyx" />
-    <Algorithm  language="Java" platform="" filename="unit.Conductance.java" />
-    <Algorithm  language="C++" platform="" filename="unit.Conductance.cpp" />
-    <Algorithm  language="R" platform="" filename="unit.Conductance.r" />
+    <Algorithm  language="C#" platform="" filename="Conductance.cs"/>
+    <Algorithm  language="Python" platform="" filename="Conductance.py" />
+    <Algorithm  language="Cython" platform="" filename="Conductance.pyx" />
+    <Algorithm  language="Java" platform="" filename="Conductance.java" />
+    <Algorithm  language="C++" platform="" filename="Conductance.cpp" />
+    <Algorithm  language="R" platform="" filename="Conductance.r" />
 
     <Parametersets>
         <Parameterset name="set1" description="some values in there" >
