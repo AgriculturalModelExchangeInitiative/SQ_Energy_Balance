@@ -21,12 +21,12 @@
    	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="unit.DiffusionLimitedEvaporation.cs" />
-    <Algorithm  language="Python" platform="" filename="unit.DiffusionLimitedEvaporation.py" />
-    <Algorithm  language="Cython" platform="" filename="unit.DiffusionLimitedEvaporation.pyx" />
-    <Algorithm  language="Java" platform="" filename="unit.DiffusionLimitedEvaporation.java" />
-    <Algorithm  language="C++" platform="" filename="unit.DiffusionLimitedEvaporation.cpp" />
-    <Algorithm  language="R" platform="" filename="unit.DiffusionLimitedEvaporation.r" />
+    <Algorithm  language="C#" platform="" filename="DiffusionLimitedEvaporation.cs" />
+    <Algorithm  language="Python" platform="" filename="DiffusionLimitedEvaporation.py" />
+    <Algorithm  language="Cython" platform="" filename="DiffusionLimitedEvaporation.pyx" />
+    <Algorithm  language="Java" platform="" filename="DiffusionLimitedEvaporation.java" />
+    <Algorithm  language="C++" platform="" filename="DiffusionLimitedEvaporation.cpp" />
+    <Algorithm  language="R" platform="" filename="DiffusionLimitedEvaporation.r" />
 
  
     <Parametersets>
