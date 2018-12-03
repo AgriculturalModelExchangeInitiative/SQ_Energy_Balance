@@ -21,12 +21,12 @@
    	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="unit.PriestlyTaylor.cs" />
-    <Algorithm  language="Python" platform="" filename="unit.PriestlyTaylor.py" />
-    <Algorithm  language="Cython" platform="" filename="unit.PriestlyTaylor.pyx" />
-    <Algorithm  language="Java" platform="" filename="unit.PriestlyTaylor.java" />
-    <Algorithm  language="C++" platform="" filename="unit.PriestlyTaylor.cpp" />
-    <Algorithm  language="R" platform="" filename="unit.PriestlyTaylor.r" />
+    <Algorithm  language="C#" platform="" filename="PriestlyTaylor.cs" />
+    <Algorithm  language="Python" platform="" filename="PriestlyTaylor.py" />
+    <Algorithm  language="Cython" platform="" filename="PriestlyTaylor.pyx" />
+    <Algorithm  language="Java" platform="" filename="PriestlyTaylor.java" />
+    <Algorithm  language="C++" platform="" filename="PriestlyTaylor.cpp" />
+    <Algorithm  language="R" platform="" filename="PriestlyTaylor.r" />
 
       <Parametersets>
         <Parameterset name="set1" description="some values in there" >
