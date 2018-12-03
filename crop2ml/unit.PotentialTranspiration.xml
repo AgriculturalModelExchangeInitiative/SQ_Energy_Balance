@@ -22,12 +22,12 @@
 
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="unit.PotentialTranspiration.cs" />
-    <Algorithm  language="Python" platform="" filename="unit.PotentialTranspiration.py" />
-    <Algorithm  language="Cython" platform="" filename="unit.PotentialTranspiration.pyx" />
-    <Algorithm  language="Java" platform="" filename="unit.PotentialTranspiration.java" />
-    <Algorithm  language="C++" platform="" filename="unit.PotentialTranspiration.cpp" />
-    <Algorithm  language="R" platform="" filename="unit.PotentialTranspiration.r" />
+    <Algorithm  language="C#" platform="" filename="PotentialTranspiration.cs" />
+    <Algorithm  language="Python" platform="" filename="PotentialTranspiration.py" />
+    <Algorithm  language="Cython" platform="" filename="PotentialTranspiration.pyx" />
+    <Algorithm  language="Java" platform="" filename="PotentialTranspiration.java" />
+    <Algorithm  language="C++" platform="" filename="PotentialTranspiration.cpp" />
+    <Algorithm  language="R" platform="" filename="PotentialTranspiration.r" />
 
 
      <Parametersets>
