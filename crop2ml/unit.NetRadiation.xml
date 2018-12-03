@@ -28,12 +28,12 @@
         <Output name="netOutGoingLongWaveRadiation" description="net OutGoing Long Wave Radiation " variablecategory="state" datatype="DOUBLE" min="0" max="5000"  unit="g m-2 d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547"/>
      </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="unit.NetRadiation.cs" />
-    <Algorithm  language="Python" platform="" filename="unit.NetRadiation.py" />
-    <Algorithm  language="Cython" platform="" filename="unit.NetRadiation.pyx" />
-    <Algorithm  language="Java" platform="" filename="unit.NetRadiation.java" />
-    <Algorithm  language="C++" platform="" filename="unit.NetRadiation.cpp" />
-    <Algorithm  language="R" platform="" filename="unit.NetRadiation.r" />
+    <Algorithm  language="C#" platform="" filename="NetRadiation.cs" />
+    <Algorithm  language="Python" platform="" filename="NetRadiation.py" />
+    <Algorithm  language="Cython" platform="" filename="NetRadiation.pyx" />
+    <Algorithm  language="Java" platform="" filename="NetRadiation.java" />
+    <Algorithm  language="C++" platform="" filename="NetRadiation.cpp" />
+    <Algorithm  language="R" platform="" filename="NetRadiation.r" />
 
      
      <Parametersets>
