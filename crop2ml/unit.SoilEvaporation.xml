@@ -25,12 +25,12 @@
 	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="unit.SoilEvaporation.cs" />
-    <Algorithm  language="Python" platform="" filename="unit.SoilEvaporation.py" />
-    <Algorithm  language="Cython" platform="" filename="unit.SoilEvaporation.pyx" />
-    <Algorithm  language="Java" platform="" filename="unit.SoilEvaporation.java" />
-    <Algorithm  language="C++" platform="" filename="unit.SoilEvaporation.cpp" />
-    <Algorithm  language="R" platform="" filename="unit.SoilEvaporation.r" />
+    <Algorithm  language="C#" platform="" filename="SoilEvaporation.cs" />
+    <Algorithm  language="Python" platform="" filename="SoilEvaporation.py" />
+    <Algorithm  language="Cython" platform="" filename="SoilEvaporation.pyx" />
+    <Algorithm  language="Java" platform="" filename="SoilEvaporation.java" />
+    <Algorithm  language="C++" platform="" filename="SoilEvaporation.cpp" />
+    <Algorithm  language="R" platform="" filename="SoilEvaporation.r" />
     
     <Parametersets>
         <Parameterset name="set1" description="some values in there" >
