@@ -23,7 +23,7 @@
     	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="CropHeatFluxe.cs" />
+    <Algorithm  language="C#" platform="" filename="CropHeatFlux.cs" />
     <Algorithm  language="Python" platform="" filename="CropHeatFlux.py" />
     <Algorithm  language="Cython" platform="" filename="CropHeatFlux.pyx" />
     <Algorithm  language="Java" platform="" filename="CropHeatFlux.java" />
