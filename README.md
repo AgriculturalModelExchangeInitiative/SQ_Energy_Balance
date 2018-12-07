@@ -8,7 +8,6 @@ Project Organization
 
 ```
 ├── LICENSE
-├── Makefile           <- Makefile with commands like `make data` or `make train`
 ├── README.md          <- The top-level README for AMEI members using this project.
 ├── data
 │
