@@ -16,8 +16,8 @@ Project Organization
 ├── tests             <- model tests
 │
 ├── crop2ml          <- model units and composite in crop2ml format.
-│
-|
+│    ├── XML files
+|    ├── Algo
 │
 ├── src                <- Source code for the algorithm part of the model in different languages
 │   ├── cython
