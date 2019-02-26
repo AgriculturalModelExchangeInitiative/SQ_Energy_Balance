@@ -23,12 +23,12 @@
     	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="PtSoil.cs" />
-    <Algorithm  language="Python" platform="" filename="PtSoil.py" />
-    <Algorithm  language="Cython" platform="" filename="PtSoil.pyx" />
-    <Algorithm  language="Java" platform="" filename="PtSoil.java" />
-    <Algorithm  language="C++" platform="" filename="PtSoil.cpp" />
-    <Algorithm  language="R" platform="" filename="PtSoil.r" />
+    <Algorithm  language="C#" platform="" filename="algo/cs/PtSoil.cs" />
+    <Algorithm  language="Python" platform="" filename="algo/py/PtSoil.py" />
+    <Algorithm  language="Cython" platform="" filename="algo/pyx/PtSoil.pyx" />
+    <Algorithm  language="Java" platform="" filename="algo/java/PtSoil.java" />
+    <Algorithm  language="C++" platform="" filename="algo/cpp/PtSoil.cpp" />
+    <Algorithm  language="R" platform="" filename="algo/r/PtSoil.r" />
 
     <Parametersets>
         <Parameterset name="set1" description="some values in there" >

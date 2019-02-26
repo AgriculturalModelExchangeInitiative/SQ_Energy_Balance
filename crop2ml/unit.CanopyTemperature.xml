@@ -11,10 +11,10 @@
     </Description>
 
     <Inputs>
-        <Input name="minTair" description="minimal temperature" datatype="DOUBLE" variableCategory = "auxiliary" min="-30" max="45" default="0.7" unit="°C" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype = "variable"/>
-        <Input name="maxTair" description="max Temperature" datatype="DOUBLE" variableCategory = "auxiliary" min="-30" max="45" default="7.2" unit="°C" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype = "variable"/>
-        <Input name="cropHeatFlux" description="Crop heat flux" variableCategory = "rate" inputtype="variable" datatype="DOUBLE" min="0" max="10000" default="447.912" unit="g m² d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" />
-        <Input name="conductance" description="the boundary layer conductance" variableCategory = "state" inputtype="variable" datatype="DOUBLE" min="0" max="10000" default="598.685" unit="m d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" />
+        <Input name="minTair" description="minimal temperature" datatype="DOUBLE" variablecategory = "auxiliary" min="-30" max="45" default="0.7" unit="°C" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype = "variable"/>
+        <Input name="maxTair" description="max Temperature" datatype="DOUBLE" variablecategory = "auxiliary" min="-30" max="45" default="7.2" unit="°C" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype = "variable"/>
+        <Input name="cropHeatFlux" description="Crop heat flux" variablecategory = "rate" inputtype="variable" datatype="DOUBLE" min="0" max="10000" default="447.912" unit="g m² d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" />
+        <Input name="conductance" description="the boundary layer conductance" variablecategory = "state" inputtype="variable" datatype="DOUBLE" min="0" max="10000" default="598.685" unit="m d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" />
         <Input name="lambdaV" description="latent heat of vaporization of water" parametercategory="constant" datatype="DOUBLE" default="2.454" min="0" max="10"  unit="MJ kg-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype="parameter"/>
         <Input name="rhoDensityAir" description="Density of air" parametercategory="constant" datatype="DOUBLE" default="1.225" unit="kg m3" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype="parameter"/>
         <Input name="specificHeatCapacityAir" description="Specific heat capacity of dry air" parametercategory="constant" datatype="DOUBLE" default="0.00101"  unit="MJ kg-1 °C-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype="parameter"/>
@@ -25,12 +25,12 @@
         <Output name="maxCanopyTemperature" description="maximal Canopy Temperature " datatype="DOUBLE" min="-30" max="45"  unit="°C" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547"/>
     </Outputs>
 
-    <Algorithm  language="C#" platform="" filename="CanopyTemperature.cs" />
-    <Algorithm  language="Python" platform="" filename="CanopyTemperature.py" />
-    <Algorithm  language="Cython" platform="" filename="CanopyTemperature.pyx" />
-    <Algorithm  language="Java" platform="" filename="CanopyTemperature.java" />
-    <Algorithm  language="C++" platform="" filename="CanopyTemperature.cpp" />
-    <Algorithm  language="R" platform="" filename="CanopyTemperature.r" />
+    <Algorithm  language="C#" platform="" filename="algo/cs/CanopyTemperature.cs" />
+    <Algorithm  language="Python" platform="" filename="algo/py/CanopyTemperature.py" />
+    <Algorithm  language="Cython" platform="" filename="algo/pyx/CanopyTemperature.pyx" />
+    <Algorithm  language="Java" platform="" filename="algo/java/CanopyTemperature.java" />
+    <Algorithm  language="C++" platform="" filename="algo/cpp/CanopyTemperature.cpp" />
+    <Algorithm  language="R" platform="" filename="algo/r/CanopyTemperature.r" />
 
     <Parametersets>
         <Parameterset name="set1" description="some values in there" >

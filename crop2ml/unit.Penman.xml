@@ -30,12 +30,12 @@
     	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="Penman.cs" />
-    <Algorithm  language="Python" platform="" filename="Penman.py" />
-    <Algorithm  language="Cython" platform="" filename="Penman.pyx" />
-    <Algorithm  language="Java" platform="" filename="Penman.java" />
-    <Algorithm  language="C++" platform="" filename="Penman.cpp" />
-    <Algorithm  language="R" platform="" filename="Penman.r" />
+    <Algorithm  language="C#" platform="" filename="algo/cs/Penman.cs" />
+    <Algorithm  language="Python" platform="" filename="algo/py/Penman.py" />
+    <Algorithm  language="Cython" platform="" filename="algo/pyx/Penman.pyx" />
+    <Algorithm  language="Java" platform="" filename="algo/java/Penman.java" />
+    <Algorithm  language="C++" platform="" filename="algo/cpp/Penman.cpp" />
+    <Algorithm  language="R" platform="" filename="algo/r/Penman.r" />
 
     
      <Parametersets>

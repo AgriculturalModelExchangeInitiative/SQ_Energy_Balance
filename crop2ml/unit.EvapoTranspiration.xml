@@ -27,12 +27,12 @@
      	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="EvapoTranspiration.cs" />
-    <Algorithm  language="Python" platform="" filename="EvapoTranspiration.py" />
-    <Algorithm  language="Cython" platform="" filename="EvapoTranspiration.pyx" />
-    <Algorithm  language="Java" platform="" filename="EvapoTranspiration.java" />
-    <Algorithm  language="C++" platform="" filename="EvapoTranspiration.cpp" />
-    <Algorithm  language="R" platform="" filename="EvapoTranspiration.r" />
+    <Algorithm  language="C#" platform="" filename="algo/cs/EvapoTranspiration.cs" />
+    <Algorithm  language="Python" platform="" filename="algo/py/EvapoTranspiration.py" />
+    <Algorithm  language="Cython" platform="" filename="algo/pyx/EvapoTranspiration.pyx" />
+    <Algorithm  language="Java" platform="" filename="algo/java/EvapoTranspiration.java" />
+    <Algorithm  language="C++" platform="" filename="algo/cpp/EvapoTranspiration.cpp" />
+    <Algorithm  language="R" platform="" filename="algo/r/EvapoTranspiration.r" />
 
      <Parametersets>
         <Parameterset name="set1" description="some values in there" >

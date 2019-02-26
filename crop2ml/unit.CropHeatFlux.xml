@@ -23,12 +23,12 @@
     	
     </Outputs>
     
-    <Algorithm  language="C#" platform="" filename="CropHeatFlux.cs" />
-    <Algorithm  language="Python" platform="" filename="CropHeatFlux.py" />
-    <Algorithm  language="Cython" platform="" filename="CropHeatFlux.pyx" />
-    <Algorithm  language="Java" platform="" filename="CropHeatFlux.java" />
-    <Algorithm  language="C++" platform="" filename="CropHeatFlux.cpp" />
-    <Algorithm  language="R" platform="" filename="CropHeatFlux.r" />
+    <Algorithm  language="C#" platform="" filename="algo/cs/CropHeatFlux.cs" />
+    <Algorithm  language="Python" platform="" filename="algo/py/CropHeatFlux.py" />
+    <Algorithm  language="Cython" platform="" filename="algo/pyx/CropHeatFlux.pyx" />
+    <Algorithm  language="Java" platform="" filename="algo/java/CropHeatFlux.java" />
+    <Algorithm  language="C++" platform="" filename="algo/cpp/CropHeatFlux.cpp" />
+    <Algorithm  language="R" platform="" filename="algo/r/CropHeatFlux.r" />
   
  
      <Parametersets>
