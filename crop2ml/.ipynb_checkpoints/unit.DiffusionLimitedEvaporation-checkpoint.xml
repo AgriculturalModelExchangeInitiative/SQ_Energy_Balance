@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ModelUnit PUBLIC " " "https://raw.githubusercontent.com/AgriculturalModelExchangeInitiative/crop2ml/master/ModelUnit.dtd">
+<ModelUnit modelid="SQ.EnergyBalance.DiffusionLimitedEvaporation" 
+            name="DiffusionLimitedEvaporation" 
+            timestep="1" 
+            version="1.0">
+    <Description>
+        <Title>DiffusionLimitedEvaporation Model</Title>
+        <Authors>Pierre Martre</Authors>
+        <Institution>INRA Montpellier</Institution>
+        <Reference> From the wheat simulation model SiriusQuality
+                    Published in 2009
+                    doi:http://dx.doi.org/10.1016/j.eja.2006.04.007          
+        </Reference>
+        <Abstract>the evaporation from the diffusion limited soil when the surface has 
+            dried sufficiently to provide a significant barrier to water vapor diffusion 
+        </Abstract>
+        <URI> http://www1.clermont.inra.fr/siriusquality/?page_id=547 </URI>
+    </Description>
+    <Inputs>
+        <Input name="deficitOnTopLayers" description="deficit On TopLayers" 
+            variablecategory="auxiliary"  datatype="DOUBLE" default="5341" 
+            min="0" max="10000" unit="g m-2 d-1" 
+            uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" 
+            inputtype="variable"/>
+        <Input name="soilDiffusionConstant" description="soil Diffusion Constant" 
+            parametercategory="soil" datatype="DOUBLE" default="4.2" min="0" max="10" 
+            unit="" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" 
+            inputtype="parameter"/>
+    </Inputs>
+    <Outputs>
+        <Output name="diffusionLimitedEvaporation" 
+                description="the evaporation from the diffusion limited soil " 
+                variablecategory="state" datatype="DOUBLE" min="0" max="5000"  
+                unit="g m-2 d-1" 
+                uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547"/>
+    </Outputs>
+    <Algorithm  language="Cyml" platform="" 
+                filename="algo/pyx/diffusionlimitedevaporation.pyx" />
+    <Parametersets>
+        <Parameterset name="set1" description="some values in there" >
+        	<Param name="soilDiffusionConstant">4.2</Param>
+        </Parameterset>
+    </Parametersets>
+    <Testsets>
+        <Testset name="first" parameterset = "set1" 
+                    description="some values in there" >
+        	<Test name ="test1">
+        		<InputValue name="deficitOnTopLayers">5341</InputValue>
+				<OutputValue name="diffusionLimitedEvaporation" precision ="3">6605.505</OutputValue>
+        	</Test>
+        </Testset>
+    </Testsets>
+</ModelUnit>

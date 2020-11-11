@@ -1,6 +1,6 @@
-cdef double AlphaE
+cdef float AlphaE
 if (tau < tauAlpha):
-    AlphaE = 1
+    AlphaE = 1.0
     
 else :
         

@@ -1,2 +1,2 @@
-potentialTranspiration= evapoTranspiration * (1 - tau)
+potentialTranspiration= evapoTranspiration * (1.0 - tau)
 
