@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -15,7 +12,6 @@ def model_penman(evapoTranspirationPriestlyTaylor = 449.367,
          specificHeatCapacityAir = 0.00101,
          conductance = 598.685):
     """
-     - Name: Penman -Version: 1.0, -Time step: 1
      - Description:
                  * Title: Penman Model
                  * Author: Pierre Martre

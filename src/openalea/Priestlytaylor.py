@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -10,7 +7,6 @@ def model_priestlytaylor(netRadiationEquivalentEvaporation = 638.142,
          psychrometricConstant = 0.66,
          Alpha = 1.5):
     """
-     - Name: PriestlyTaylor -Version: 1.0, -Time step: 1
      - Description:
                  * Title: evapoTranspirationPriestlyTaylor  Model
                  * Author: Pierre Martre

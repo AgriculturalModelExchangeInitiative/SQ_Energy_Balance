@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -9,7 +6,6 @@ def model_soilheatflux(netRadiationEquivalentEvaporation = 638.142,
          tau = 0.9983,
          soilEvaporation = 448.24):
     """
-     - Name: SoilHeatFlux -Version: 1.0, -Time step: 1
      - Description:
                  * Title: SoilHeatFlux Model
                  * Author: Pierre Martre

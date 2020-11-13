@@ -8,8 +8,8 @@ import numpy
 
 def test_test1():
     params= netradiation(
-    elevation = 0,
     solarRadiation = 3,
+    elevation = 0,
     vaporPressure = 6.1,
      )
     netRadiation_estimated = round(params[0], 3)

@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -10,7 +7,6 @@ def model_ptsoil(evapoTranspirationPriestlyTaylor = 120.0,
          tau = 0.9983,
          tauAlpha = 0.3):
     """
-     - Name: PtSoil -Version: 1.0, -Time step: 1
      - Description:
                  * Title: PtSoil EnergyLimitedEvaporation Model
                  * Author: Pierre Martre
@@ -24,7 +20,7 @@ def model_ptsoil(evapoTranspirationPriestlyTaylor = 120.0,
                                ** default : 120
                                ** max : 1000
                                ** uri : http://www1.clermont.inra.fr/siriusquality/?page_id=547
-                               ** variablecategory : state
+                               ** variablecategory : rate
                                ** datatype : DOUBLE
                                ** inputtype : variable
                                ** unit : g m-2 d-1

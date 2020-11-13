@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -9,7 +6,6 @@ def model_cropheatflux(netRadiationEquivalentEvaporation = 638.142,
          soilHeatFlux = 188.817,
          potentialTranspiration = 1.413):
     """
-     - Name: CropHeatFlux -Version: 1.0, -Time step: 1
      - Description:
                  * Title: CropHeatFlux Model
                  * Author: Pierre Martre

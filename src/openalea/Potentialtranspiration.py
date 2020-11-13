@@ -1,14 +1,10 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
 def model_potentialtranspiration(evapoTranspiration = 830.958,
          tau = 0.9983):
     """
-     - Name: PotentialTranspiration -Version: 1.0, -Time step: 1
      - Description:
                  * Title: PotentialTranspiration Model
                  * Author: Pierre Martre

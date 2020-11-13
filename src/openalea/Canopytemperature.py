@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -13,7 +10,6 @@ def model_canopytemperature(minTair = 0.7,
          rhoDensityAir = 1.225,
          specificHeatCapacityAir = 0.00101):
     """
-     - Name: CanopyTemperature -Version: 1.0, -Time step: 1
      - Description:
                  * Title: CanopyTemperature Model
                  * Author: Pierre Martre
