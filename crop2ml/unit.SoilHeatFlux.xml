@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Model PUBLIC " " "https://raw.githubusercontent.com/AgriculturalModelExchangeInitiative/crop2ml/master/ModelUnit.dtd">
+<!DOCTYPE ModelUnit PUBLIC " " "https://raw.githubusercontent.com/AgriculturalModelExchangeInitiative/crop2ml/master/ModelUnit.dtd">
 <ModelUnit modelid="SQ.EnergyBalance.SoilHeatFlux" name="SoilHeatFlux" timestep="1" version="1.0">
     <Description>
         <Title>SoilHeatFlux Model</Title>
@@ -16,15 +16,10 @@
     </Inputs>
 
     <Outputs>
-        <Output name="soilHeatFlux" description="soil Heat Flux " variablecategory="state"  datatype="DOUBLE" min="0" max="10000"  unit="g m-2 d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547"/>
+        <Output name="soilHeatFlux" description="soil Heat Flux " variablecategory="rate"  datatype="DOUBLE" min="0" max="10000"  unit="g m-2 d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547"/>
    	</Outputs>
-    
-    <Algorithm  language="C#" platform="" filename="algo/cs/SoilHeatFlux.cs" />
-    <Algorithm  language="Python" platform="" filename="algo/py/SoilHeatFlux.py" />
-    <Algorithm  language="Cython" platform="" filename="algo/pyx/SoilHeatFlux.pyx" />
-    <Algorithm  language="Java" platform="" filename="algo/java/SoilHeatFlux.java" />
-    <Algorithm  language="C++" platform="" filename="algo/cpp/SoilHeatFlux.cpp" />
-    <Algorithm  language="R" platform="" filename="algo/r/SoilHeatFlux.r" />
+
+    <Algorithm  language="Cyml" platform="" filename="algo/pyx/soilheatflux.pyx" />
 
 
     <Parametersets>
@@ -40,12 +35,12 @@
         		<InputValue name="netRadiationEquivalentEvaporation">638.142</InputValue>
         		<InputValue name="soilEvaporation">448.240</InputValue>
  				<OutputValue name="soilHeatFlux" precision ="3">188.817</OutputValue>
-	
+
         	</Test>
 
         </Testset>
       </Testsets>
- 	
- 	
- 	
+
+
+
 </ModelUnit>

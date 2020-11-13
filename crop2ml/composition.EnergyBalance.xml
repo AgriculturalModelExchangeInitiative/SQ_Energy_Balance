@@ -10,7 +10,7 @@
   </Description>
   <Composition>
     <Model name="NetRadiation" id="SQ.EnergyBalance.NetRadiation" filename="unit.NetRadiation.xml" />
-    <Model name="NetRadiationEquivalentEvaporation" id="SQ.EnergyBalance.NetRadiationEquivalentEvaporation" filename="unit.NetRadiationEquivalent.xml" />
+    <Model name="NetRadiationEquivalentEvaporation" id="SQ.EnergyBalance.NetRadiationEquivalentEvaporation" filename="unit.NetRadiationEquivalentEvaporation.xml" />
     <Model name="PriestlyTaylor" id="SQ.EnergyBalance.PriestlyTaylor" filename="unit.PriestlyTaylor.xml" />
     <Model name="Conductance" id="SQ.EnergyBalance.Conductance" filename="unit.Conductance.xml" />
     <Model name="DiffusionLimitedEvaporation" id="SQ.EnergyBalance.DiffusionLimitedEvaporation" filename="unit.DiffusionLimitedEvaporation.xml" />

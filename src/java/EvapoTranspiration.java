@@ -1,42 +1,83 @@
-public class EvapoTranspiration
+import  java.io.*;
+import  java.util.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import javafx.util.*;
+import java.time.LocalDateTime;
+public class Evapotranspiration
 {
-    public double evapoTranspiration;
-    public EvapoTranspiration(double _evapoTranspiration)
-    {
-        this.evapoTranspiration=_evapoTranspiration;
-    }
-}
+    private int isWindVpDefined;
+    public int getisWindVpDefined()
+    { return isWindVpDefined; }
 
-public static class Estimation_EvapoTranspiration
-{
-    public static EvapoTranspiration CalculateEvapoTranspiration(int isWindVpDefined,double evapoTranspirationPriestlyTaylor,double evapoTranspirationPenman)
-    {
-
-
-/*
-     Evapotranspiration Model
-
-    Author: 
-    Reference: Modelling energy balance in the wheat crop model SiriusQuality2:
-            Evapotranspiration and canopy and soil temperature calculations
-    Instituton: INRA Montpellier
-    Abstract: According to the availability of wind and/or vapor pressure daily data, the
-            SiriusQuality2 model calculates the evapotranspiration rate using the Penman (if wind
-            and vapor pressure data are available) (Penman 1948) or the Priestly-Taylor
-            (Priestley and Taylor 1972) method 
+    public void setisWindVpDefined(int _isWindVpDefined)
+    { this.isWindVpDefined= _isWindVpDefined; } 
     
-*/
+    public Evapotranspiration() { }
+    public void  Calculate_evapotranspiration(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    {
+        //- Name: EvapoTranspiration -Version: 1.0, -Time step: 1
+        //- Description:
+    //            * Title: Evapotranspiration Model
+    //            * Author: Pierre Martre
+    //            * Reference: Modelling energy balance in the wheat crop model SiriusQuality2:
+    //            Evapotranspiration and canopy and soil temperature calculations
+    //            * Institution: INRA Montpellier
+    //            * Abstract: According to the availability of wind and/or vapor pressure daily data, the
+    //            SiriusQuality2 model calculates the evapotranspiration rate using the Penman (if wind
+    //            and vapor pressure data are available) (Penman 1948) or the Priestly-Taylor
+    //            (Priestley and Taylor 1972) method 
+        //- inputs:
+    //            * name: isWindVpDefined
+    //                          ** description : if wind and vapour pressure are defined
+    //                          ** parametercategory : constant
+    //                          ** datatype : INT
+    //                          ** default : 1
+    //                          ** min : 0
+    //                          ** max : 1
+    //                          ** unit : 
+    //                          ** uri : http://www1.clermont.inra.fr/siriusquality/?page_id=547
+    //                          ** inputtype : parameter
+    //            * name: evapoTranspirationPriestlyTaylor
+    //                          ** description : evapoTranspiration of Priestly Taylor 
+    //                          ** variablecategory : rate
+    //                          ** default : 449.367
+    //                          ** datatype : DOUBLE
+    //                          ** min : 0
+    //                          ** max : 10000
+    //                          ** unit : mm
+    //                          ** uri : http://www1.clermont.inra.fr/siriusquality/?page_id=547
+    //                          ** inputtype : variable
+    //            * name: evapoTranspirationPenman
+    //                          ** description : evapoTranspiration of Penman 
+    //                          ** datatype : DOUBLE
+    //                          ** variablecategory : rate
+    //                          ** default : 830.958
+    //                          ** min : 0
+    //                          ** max : 10000
+    //                          ** unit : mm
+    //                          ** uri : http://www1.clermont.inra.fr/siriusquality/?page_id=547
+    //                          ** inputtype : variable
+        //- outputs:
+    //            * name: evapoTranspiration
+    //                          ** description : evapoTranspiration
+    //                          ** variablecategory : rate
+    //                          ** datatype : DOUBLE
+    //                          ** min : 0
+    //                          ** max : 10000
+    //                          ** unit : mm
+    //                          ** uri : http://www1.clermont.inra.fr/siriusquality/?page_id=547
+        double evapoTranspirationPriestlyTaylor = r.getevapoTranspirationPriestlyTaylor();
+        double evapoTranspirationPenman = r.getevapoTranspirationPenman();
         double evapoTranspiration;
-
         if (isWindVpDefined == 1)
         {
-                evapoTranspiration = evapoTranspirationPenman;
+            evapoTranspiration = evapoTranspirationPenman;
         }
         else
         {
-                evapoTranspiration = evapoTranspirationPriestlyTaylor;
+            evapoTranspiration = evapoTranspirationPriestlyTaylor;
         }
-        return new EvapoTranspiration(evapoTranspiration);
+        r.setevapoTranspiration(evapoTranspiration);
     }
-
 }
