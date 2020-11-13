@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -9,7 +6,6 @@ def model_evapotranspiration(isWindVpDefined = 1,
          evapoTranspirationPriestlyTaylor = 449.367,
          evapoTranspirationPenman = 830.958):
     """
-     - Name: EvapoTranspiration -Version: 1.0, -Time step: 1
      - Description:
                  * Title: Evapotranspiration Model
                  * Author: Pierre Martre

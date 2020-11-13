@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -14,7 +11,6 @@ def model_netradiation(minTair = 0.7,
          vaporPressure = 6.1,
          extraSolarRadiation = 11.7):
     """
-     - Name: NetRadiation -Version: 1.0, -Time step: 1
      - Description:
                  * Title: NetRadiation Model
                  * Author: Pierre Martre

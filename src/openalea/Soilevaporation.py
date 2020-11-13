@@ -1,14 +1,10 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
 def model_soilevaporation(diffusionLimitedEvaporation = 6605.505,
          energyLimitedEvaporation = 448.24):
     """
-     - Name: SoilEvaporation -Version: 1.0, -Time step: 1
      - Description:
                  * Title: SoilEvaporation Model
                  * Author: Pierre Martre

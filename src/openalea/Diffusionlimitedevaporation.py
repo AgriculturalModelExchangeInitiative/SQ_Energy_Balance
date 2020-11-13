@@ -1,14 +1,10 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
 def model_diffusionlimitedevaporation(deficitOnTopLayers = 5341.0,
          soilDiffusionConstant = 4.2):
     """
-     - Name: DiffusionLimitedEvaporation -Version: 1.0, -Time step: 1
      - Description:
                  * Title: DiffusionLimitedEvaporation Model
                  * Author: Pierre Martre

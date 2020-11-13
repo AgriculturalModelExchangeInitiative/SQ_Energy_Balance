@@ -1,14 +1,10 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
 def model_netradiationequivalentevaporation(lambdaV = 2.454,
          netRadiation = 1.566):
     """
-     - Name: NetRadiationEquivalentEvaporation -Version: 1.0, -Time step: 1
      - Description:
                  * Title: NetRadiationEquivalentEvaporation Model
                  * Author: Pierre Martre

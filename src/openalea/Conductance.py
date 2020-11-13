@@ -1,7 +1,4 @@
 # coding: utf8
-from pycropml.units import u
-from copy import copy
-
 import numpy
 from math import *
 
@@ -13,7 +10,6 @@ def model_conductance(vonKarman = 0.42,
          plantHeight = 0.0,
          wind = 124000.0):
     """
-     - Name: Conductance -Version: 1.0, -Time step: 1
      - Description:
                  * Title: Conductance Model
                  * Author: Pierre Martre

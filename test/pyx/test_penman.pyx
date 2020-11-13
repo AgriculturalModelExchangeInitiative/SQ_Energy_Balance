@@ -8,9 +8,9 @@ import numpy
 
 def test_test1():
     params= penman(
+    evapoTranspirationPriestlyTaylor = 449.367,
     Alpha = 1.5,
     lambdaV = 2.454,
-    evapoTranspirationPriestlyTaylor = 449.367,
     hslope = 0.584,
     VPDair = 2.19,
      )
