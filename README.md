@@ -1,4 +1,7 @@
- AgriculturalModelExchangeInitiative
+[![DOI](https://zenodo.org/badge/159197147.svg)](https://zenodo.org/badge/latestdoi/159197147)
+
+
+AgriculturalModelExchangeInitiative
 ==============================
 
 Model of Energy Balance of the crop growth simulation model SiriusQuality
