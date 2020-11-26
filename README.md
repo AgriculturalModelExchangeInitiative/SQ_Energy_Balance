@@ -38,3 +38,16 @@ Project Organization
    
 ```
 
+Model visualization
+-------------------
+.. image:: doc/images/energy_balance2.png
+
+An example of transformation in OpenAlea
+----------------------------------------
+
+.. image:: doc/images/energy_balance.png
+
+
+
+An example of unit test in R
+----------------------------
