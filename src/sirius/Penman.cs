@@ -35,7 +35,7 @@ public class Penman
     }
     public Penman() { }
     
-    public void  Calculate_penman(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: Penman -Version: 1.0, -Time step: 1
         //- Description:

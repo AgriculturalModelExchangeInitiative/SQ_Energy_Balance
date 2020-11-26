@@ -11,7 +11,7 @@ public class Evapotranspiration
     }
     public Evapotranspiration() { }
     
-    public void  Calculate_evapotranspiration(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: EvapoTranspiration -Version: 1.0, -Time step: 1
         //- Description:

@@ -8,9 +8,9 @@ import numpy
 
 def test_test1():
     params= soilheatflux(
-    soilEvaporation = 448.240,
     tau = 0.9983,
     netRadiationEquivalentEvaporation = 638.142,
+    soilEvaporation = 448.240,
      )
     soilHeatFlux_estimated = round(params, 3)
     soilHeatFlux_computed = 188.817

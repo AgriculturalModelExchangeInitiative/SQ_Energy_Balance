@@ -11,7 +11,7 @@ public class Soilheatflux
     }
     public Soilheatflux() { }
     
-    public void  Calculate_soilheatflux(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: SoilHeatFlux -Version: 1.0, -Time step: 1
         //- Description:

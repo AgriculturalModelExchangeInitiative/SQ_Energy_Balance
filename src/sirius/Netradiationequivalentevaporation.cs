@@ -11,7 +11,7 @@ public class Netradiationequivalentevaporation
     }
     public Netradiationequivalentevaporation() { }
     
-    public void  Calculate_netradiationequivalentevaporation(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: NetRadiationEquivalentEvaporation -Version: 1.0, -Time step: 1
         //- Description:

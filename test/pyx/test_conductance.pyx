@@ -8,9 +8,9 @@ import numpy
 
 def test_test1():
     params= conductance(
-    zm = 0.13,
-    zh = 0.013,
     d = 0.67,
+    zh = 0.013,
+    zm = 0.13,
     wind = 124000,
     plantHeight = 0,
      )

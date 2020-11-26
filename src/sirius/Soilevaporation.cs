@@ -6,7 +6,7 @@ public class Soilevaporation
     
     public Soilevaporation() { }
     
-    public void  Calculate_soilevaporation(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: SoilEvaporation -Version: 1.0, -Time step: 1
         //- Description:

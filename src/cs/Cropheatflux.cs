@@ -6,7 +6,7 @@ public class Cropheatflux
     
     public Cropheatflux() { }
     
-    public void  Calculate_cropheatflux(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: CropHeatFlux -Version: 1.0, -Time step: 1
         //- Description:
