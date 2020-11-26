@@ -8,9 +8,9 @@ import numpy
 
 def test_test1():
     params= canopytemperature(
-    maxTair = 7.2,
-    minTair = 0.7,
     rhoDensityAir = 1.225,
+    minTair = 0.7,
+    maxTair = 7.2,
      )
     minCanopyTemperature_estimated = round(params[0], 3)
     minCanopyTemperature_computed = 2.184

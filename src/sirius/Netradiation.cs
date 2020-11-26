@@ -23,7 +23,7 @@ public class Netradiation
     }
     public Netradiation() { }
     
-    public void  Calculate_netradiation(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: NetRadiation -Version: 1.0, -Time step: 1
         //- Description:

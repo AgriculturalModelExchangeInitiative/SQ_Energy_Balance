@@ -166,21 +166,21 @@ public class EnergybalanceComponent
         { _Evapotranspiration.isWindVpDefined = value; } 
     }
     
-    public void  Calculate_energybalance(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel%s(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
-        _Diffusionlimitedevaporation.Calculate_diffusionlimitedevaporation(s,s1, r, a);
-        _Conductance.Calculate_conductance(s,s1, r, a);
-        _Netradiation.Calculate_netradiation(s,s1, r, a);
-        _Netradiationequivalentevaporation.Calculate_netradiationequivalentevaporation(s,s1, r, a);
-        _Priestlytaylor.Calculate_priestlytaylor(s,s1, r, a);
-        _Penman.Calculate_penman(s,s1, r, a);
-        _Evapotranspiration.Calculate_evapotranspiration(s,s1, r, a);
-        _Potentialtranspiration.Calculate_potentialtranspiration(s,s1, r, a);
-        _Ptsoil.Calculate_ptsoil(s,s1, r, a);
-        _Soilevaporation.Calculate_soilevaporation(s,s1, r, a);
-        _Soilheatflux.Calculate_soilheatflux(s,s1, r, a);
-        _Cropheatflux.Calculate_cropheatflux(s,s1, r, a);
-        _Canopytemperature.Calculate_canopytemperature(s,s1, r, a);
+        _Diffusionlimitedevaporation.CalculateModel(s,s1, r, a);
+        _Conductance.CalculateModel(s,s1, r, a);
+        _Netradiation.CalculateModel(s,s1, r, a);
+        _Netradiationequivalentevaporation.CalculateModel(s,s1, r, a);
+        _Priestlytaylor.CalculateModel(s,s1, r, a);
+        _Penman.CalculateModel(s,s1, r, a);
+        _Evapotranspiration.CalculateModel(s,s1, r, a);
+        _Potentialtranspiration.CalculateModel(s,s1, r, a);
+        _Ptsoil.CalculateModel(s,s1, r, a);
+        _Soilevaporation.CalculateModel(s,s1, r, a);
+        _Soilheatflux.CalculateModel(s,s1, r, a);
+        _Cropheatflux.CalculateModel(s,s1, r, a);
+        _Canopytemperature.CalculateModel(s,s1, r, a);
     }
     
     public EnergybalanceComponent(EnergybalanceComponent toCopy): this() // copy constructor 

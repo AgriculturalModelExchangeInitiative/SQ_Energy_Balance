@@ -17,7 +17,7 @@ public class Priestlytaylor
     }
     public Priestlytaylor() { }
     
-    public void  Calculate_priestlytaylor(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: PriestlyTaylor -Version: 1.0, -Time step: 1
         //- Description:

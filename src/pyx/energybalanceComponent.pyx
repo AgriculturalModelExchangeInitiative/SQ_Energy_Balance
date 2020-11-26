@@ -40,32 +40,32 @@ def model_energybalance(float minTair=0.7,
       float tau=0.9983,
       float tauAlpha=0.3,
       int isWindVpDefined=1):
-    cdef float diffusionLimitedEvaporation=6605.505
-    cdef float energyLimitedEvaporation=448.24
-    cdef float soilEvaporation
-    cdef float cropHeatFlux=447.912
-    cdef float conductance=598.685
-    cdef float minCanopyTemperature
-    cdef float maxCanopyTemperature
-    cdef float evapoTranspiration=830.958
-    cdef float potentialTranspiration
-    cdef float netRadiationEquivalentEvaporation=638.142
-    cdef float evapoTranspirationPriestlyTaylor
-    cdef float soilHeatFlux
     cdef float netRadiation
     cdef float netOutGoingLongWaveRadiation
+    cdef float netRadiationEquivalentEvaporation
+    cdef float evapoTranspirationPriestlyTaylor
+    cdef float conductance
+    cdef float diffusionLimitedEvaporation
     cdef float evapoTranspirationPenman
+    cdef float energyLimitedEvaporation
+    cdef float soilEvaporation
+    cdef float evapoTranspiration
+    cdef float soilHeatFlux
+    cdef float potentialTranspiration
+    cdef float cropHeatFlux
+    cdef float minCanopyTemperature
+    cdef float maxCanopyTemperature
+    diffusionLimitedEvaporation = model_diffusionlimitedevaporation( deficitOnTopLayers,soilDiffusionConstant)
+    conductance = model_conductance( vonKarman,heightWeatherMeasurements,zm,zh,d,plantHeight,wind)
     netRadiation, netOutGoingLongWaveRadiation = model_netradiation( minTair,maxTair,albedoCoefficient,stefanBoltzman,elevation,solarRadiation,vaporPressure,extraSolarRadiation)
     netRadiationEquivalentEvaporation = model_netradiationequivalentevaporation( lambdaV,netRadiation)
     evapoTranspirationPriestlyTaylor = model_priestlytaylor( netRadiationEquivalentEvaporation,hslope,psychrometricConstant,Alpha)
-    energyLimitedEvaporation = model_ptsoil( evapoTranspirationPriestlyTaylor,Alpha,tau,tauAlpha)
-    diffusionLimitedEvaporation = model_diffusionlimitedevaporation( deficitOnTopLayers,soilDiffusionConstant)
-    soilEvaporation = model_soilevaporation( diffusionLimitedEvaporation,energyLimitedEvaporation)
-    soilHeatFlux = model_soilheatflux( netRadiationEquivalentEvaporation,tau,soilEvaporation)
-    conductance = model_conductance( vonKarman,heightWeatherMeasurements,zm,zh,d,plantHeight,wind)
     evapoTranspirationPenman = model_penman( evapoTranspirationPriestlyTaylor,hslope,VPDair,psychrometricConstant,Alpha,lambdaV,rhoDensityAir,specificHeatCapacityAir,conductance)
     evapoTranspiration = model_evapotranspiration( isWindVpDefined,evapoTranspirationPriestlyTaylor,evapoTranspirationPenman)
     potentialTranspiration = model_potentialtranspiration( evapoTranspiration,tau)
+    energyLimitedEvaporation = model_ptsoil( evapoTranspirationPriestlyTaylor,Alpha,tau,tauAlpha)
+    soilEvaporation = model_soilevaporation( diffusionLimitedEvaporation,energyLimitedEvaporation)
+    soilHeatFlux = model_soilheatflux( netRadiationEquivalentEvaporation,tau,soilEvaporation)
     cropHeatFlux = model_cropheatflux( netRadiationEquivalentEvaporation,soilHeatFlux,potentialTranspiration)
     minCanopyTemperature, maxCanopyTemperature = model_canopytemperature( minTair,maxTair,cropHeatFlux,conductance,lambdaV,rhoDensityAir,specificHeatCapacityAir)
     return netRadiation, netOutGoingLongWaveRadiation, netRadiationEquivalentEvaporation, evapoTranspirationPriestlyTaylor, diffusionLimitedEvaporation, energyLimitedEvaporation, conductance, evapoTranspirationPenman, soilEvaporation, evapoTranspiration, potentialTranspiration, soilHeatFlux, cropHeatFlux, minCanopyTemperature, maxCanopyTemperature

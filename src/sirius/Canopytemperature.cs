@@ -23,7 +23,7 @@ public class Canopytemperature
     }
     public Canopytemperature() { }
     
-    public void  Calculate_canopytemperature(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: CanopyTemperature -Version: 1.0, -Time step: 1
         //- Description:

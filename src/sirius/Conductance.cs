@@ -35,7 +35,7 @@ public class Conductance
     }
     public Conductance() { }
     
-    public void  Calculate_conductance(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: Conductance -Version: 1.0, -Time step: 1
         //- Description:

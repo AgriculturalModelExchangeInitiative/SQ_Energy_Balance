@@ -116,7 +116,7 @@ class EnergybalanceWrapper
         a.deficitOnTopLayers = deficitOnTopLayers;
         a.VPDair = VPDair;
         a.netOutGoingLongWaveRadiation = netOutGoingLongWaveRadiation;
-        energybalanceComponent.Calculate_energybalance(s,s1, r, a);
+        energybalanceComponent.CalculateModel(s,s1, r, a);
     }
 
 }

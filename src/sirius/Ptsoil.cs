@@ -23,7 +23,7 @@ public class Ptsoil
     }
     public Ptsoil() { }
     
-    public void  Calculate_ptsoil(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
+    public void  CalculateModel(EnergybalanceState s, EnergybalanceState s1, EnergybalanceRate r, EnergybalanceAuxiliary a)
     {
         //- Name: PtSoil -Version: 1.0, -Time step: 1
         //- Description:
