@@ -40,12 +40,12 @@ Project Organization
 
 Model visualization
 -------------------
-.. image:: doc/images/energy_balance2.png
+![](doc/images/energy_balance2.png)
 
 An example of transformation in OpenAlea
 ----------------------------------------
 
-.. image:: doc/images/energy_balance.png
+![](doc/images/energy_balance.png)
 
 
 
