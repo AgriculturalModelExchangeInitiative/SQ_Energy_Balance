@@ -8,6 +8,7 @@
         <Reference>Modelling energy balance in the wheat crop model SiriusQuality2:
             Evapotranspiration and canopy and soil temperature calculations</Reference>
         <Abstract>It is calculated from the crop heat flux and the boundary layer conductance </Abstract>
+        <ShortDescription>It is calculated from the crop heat flux and the boundary layer conductance </ShortDescription>
     </Description>
     <Inputs>
         <Input name="minTair" description="minimum air temperature" datatype="DOUBLE" variablecategory="auxiliary" min="-30" max="45" default="0.7" unit="degC" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype="variable" />

@@ -9,6 +9,9 @@
             Evapotranspiration and canopy and soil temperature calculations</Reference>
         <Abstract>SiriusQuality2 uses availability of water from the soil reservoir as a method to restrict
                     transpiration as soil moisture is depleted </Abstract>
+        <ShortDescription>It uses the availability of water from the soil reservoir as a method to restrict
+            transpiration as soil moisture is depleted</ShortDescription>
+
     </Description>
     <Inputs>
 

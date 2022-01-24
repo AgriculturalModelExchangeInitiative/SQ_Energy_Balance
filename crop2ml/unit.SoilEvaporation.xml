@@ -12,6 +12,11 @@
                 Hence, the soil evaporation model considers these two processes taking the minimum between
                 the energy limited evaporation (PtSoil) and the diffused limited
                 evaporation </Abstract>
+        <ShortDescription>Starting from a soil at field capacity, soil evaporation  is assumed to
+            be energy limited during the first phase of evaporation and diffusion limited thereafter.
+            Hence, the soil evaporation model considers these two processes taking the minimum between
+            the energy limited evaporation (PtSoil) and the diffused limited
+            evaporation</ShortDescription>
     </Description>
     <Inputs>
 
