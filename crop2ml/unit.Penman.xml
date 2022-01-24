@@ -7,8 +7,7 @@
         <Institution>INRA/LEPSE Montpellier</Institution>
         <Reference>Modelling energy balance in the wheat crop model SiriusQuality2:
             Evapotranspiration and canopy and soil temperature calculations</Reference>
-        <Abstract>This method is used when wind and vapor pressure daily data are available
-        </Abstract>
+        <Abstract>It uses Penmann-Monteith method vase on the availability of wind and vapor pressure daily data</Abstract>
     </Description>
     <Inputs>
 
@@ -54,3 +53,4 @@
       </Testsets>
 
 </ModelUnit>
+

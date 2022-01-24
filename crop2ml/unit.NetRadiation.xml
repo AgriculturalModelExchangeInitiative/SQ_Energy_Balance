@@ -10,6 +10,8 @@
             Evapotranspiration and canopy and soil temperature calculations</Reference>
         <Abstract>It is calculated at the surface of the canopy and is givenby the difference between incoming and outgoing radiation of both short
                      and long wavelength radiation </Abstract>
+        <ShortDescription>It refers as difference between incoming and outgoing radiation of both short
+            and long wavelength radiation </ShortDescription>
     </Description>
 
     <Inputs>

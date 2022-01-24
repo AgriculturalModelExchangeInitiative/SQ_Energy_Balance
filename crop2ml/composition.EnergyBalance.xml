@@ -7,6 +7,7 @@
     <Institution>INRA/LEPSE</Institution>
     <Reference>Modelling energy balance in the wheat crop model SiriusQuality2: Evapotranspiration and canopy and soil temperature calculations</Reference>
     <Abstract>see documentation at http://www1.clermont.inra.fr/siriusquality/?page_id=547</Abstract>
+    <ShortDescription>This component calculates the canopy temperature and energy balance</ShortDescription>
   </Description>
   <Composition>
     <Model name="NetRadiation" id="SQ.EnergyBalance.NetRadiation" filename="unit.NetRadiation.xml" />

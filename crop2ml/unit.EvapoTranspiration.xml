@@ -11,6 +11,7 @@
             SiriusQuality2 model calculates the evapotranspiration rate using the Penman (if wind
             and vapor pressure data are available) (Penman 1948) or the Priestly-Taylor
             (Priestley and Taylor 1972) method </Abstract>
+        <ShortDescription>It uses to choose evapotranspiration of Penmann or Priestly-Taylor </ShortDescription>
     </Description>
 
     <Inputs>

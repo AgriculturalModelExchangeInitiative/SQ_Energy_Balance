@@ -8,6 +8,7 @@
         <Reference>Modelling energy balance in the wheat crop model SiriusQuality2:
             Evapotranspiration and canopy and soil temperature calculations</Reference>
         <Abstract>The available energy in the soil </Abstract>
+        <ShortDescription>The available energy in the soil</ShortDescription>
     </Description>
     <Inputs>
         <Input name="netRadiationEquivalentEvaporation" variablecategory="state" description="net Radiation Equivalent Evaporation"  datatype="DOUBLE" default="638.142" min="0" max="5000" unit="g m-2 d-1" uri="http://www1.clermont.inra.fr/siriusquality/?page_id=547" inputtype="variable"/>
@@ -44,3 +45,4 @@
 
 
 </ModelUnit>
+
