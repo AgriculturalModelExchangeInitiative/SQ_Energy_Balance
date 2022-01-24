@@ -1,4 +1,7 @@
- AgriculturalModelExchangeInitiative
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4292231.svg)](https://doi.org/10.5281/zenodo.4292231)
+
+
+AgriculturalModelExchangeInitiative
 ==============================
 
 Model of Energy Balance of the crop growth simulation model SiriusQuality
@@ -51,4 +54,6 @@ An example of transformation in OpenAlea
 
 An example of unit test in R (Penman model unit)
 ------------------------------------------------
+
 ![](doc/images/test_penman.PNG)
+
